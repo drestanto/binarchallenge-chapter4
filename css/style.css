@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+body,
+html {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+}
+
+h2 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+}
+
+h4 {
+    color:#FCB344;
+}
+
+p {
+    color: white;
+}
+
+#main {
+    background-image: url("../img/main-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.centroid {
+    text-align: center;
+    position: relative;
+    top: 30vh;
+}
+
+
+.downer {
+    padding-top: 20vh
+}
+
+.downer a p {
+  color: white;
+  text-decoration: none;
+}
+
+.tombol {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    padding-top: 1vh;
+    height : 10vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    color: #1A1917;
+    font-weight: bold;
+}
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    background: black;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar .container .row {
+    width: 100%; 
+    margin: 0;
+}
+
+#the-games {
+    background-image: url("../img/the-games-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 7fr;
+    grid-template-areas:
+        ".              .              ."
+        "the-games-text .              ."
+        ".              picture-slider .";
+}
+
+.the-games-title {
+    grid-area: the-games-text;
+}
+
+.karosel {
+    grid-area: picture-slider;
+}
+
+#features {
+    background-image: url("../img/features.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    padding-top: 20%;
+    padding-left: 30%;
+}
+
+#requirements {
+    background-image: url("../img/requirements.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.margin-padding {
+    padding-top: 3vh;
+    padding-left: 10vw;
+}
+
+.tabel {
+    color: white;
+    font-size: medium;
+    margin-bottom: 0%;
+}
+
+.tabel th {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+#top-score {
+    background-image: url("../img/top-score-bg.png");
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    padding: 5% 10%;
+    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "quotes-title testimony";
+}
+
+.profile {
+  width: 400px;
+}
+
+.avatar {
+  transform: scale(1.1);
+}
+
+.top-score-title {
+    grid-area: quotes-title;
+    text-align: left;
+    position: relative;
+    top: 20vh;
+}
+
+.testimonial {
+    grid-area: testimony;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ".    evan "
+    "jada jada "
+    ".    aaron";
+}
+
+#evan {
+    grid-area: evan;
+}
+
+#jada {
+    grid-area: jada;
+}
+
+#aaron {
+    grid-area: aaron;
+}
+
+#top-score h4 {
+    font-size: medium;
+}
+
+.profile {
+    background: #1A1B1C;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 15px;
+    margin: 30px 10px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 0 !important;
+    color: grey;
+}
+
+.top-score .fa-twitter {
+    font-size: x-small;
+    color: white;
+}
+
+.testimonial {
+    margin-top: 20px;
+}
+
+.testimonial .profile .profil-detail {
+    display: flex;
+    align-items: center;
+}
+
+.profil-detail .nama {
+    margin-left: 20px;
+    color: #FFB548;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding: 0;
+    line-height: 22px;
+}
+
+.profil-detail .nama span {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 60px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* SUBSCRIBE */
+#subscribe {
+    background-color: #080A0B;
+    background-image: url('../img/skull.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 75%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-size: 25%;
+    background-position-x: 20%;
+    background-position-y: 50%;
+    font-size: medium;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".    subscribe";
+}
+
+#subscribe .row {
+    grid-area: subscribe;
+}
+
+#footer {
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-small;
+    z-index: 1001;
+}
+
+hr {
+    border-color: rgb(189, 189, 189);
+    color: white;
+}
+
+.card a {
+    color: rgb(189, 189, 189);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.under-footer {
+    color: rgb(189, 189, 189);
+    padding-bottom: 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.under-footer>* {
+    justify-content: center;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube-play, .fa-twitch {
+    font-size: medium;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.privacy-policy {
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.privacy-policy a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 992px) {
+
+    .card a {
+        margin-left: 20;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .fa-facebook:hover {
+        color: #3b5998;
+    }
+
+    .fa-twitter:hover {
+        color: turquoise;
+    }
+
+    .fa-youtube-play:hover {
+        color: red;
+    }
+    .fa-twitch:hover {
+        color: #6441a5;
+    }
+
+    .copyright {
+        font-size: medium;
+    }
+
+    .privacy-policy {
+        padding-top: 0;
+        text-align: right;
+    }
+
+    .privacy-policy p {
+        font-size: medium;
+    }
+
+    .form-control::placeholder {
+        color: maroon;
+        opacity: 1;
+    }
+
+    .close{
+        z-index:999999;
+    }
+
+}
