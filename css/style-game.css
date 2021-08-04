@@ -60,17 +60,19 @@ html {
     justify-content: center;
 }
 
-.batu {
-    height: 62rem;
-    width: 88rem;
-}
-
-.kertas {
-    height: 110rem;
+.opsi {
+    height: 100rem;
     width: 85rem;
 }
 
-.gunting {
-    height: 120rem;
-    width: 85rem;
+.vs {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64rem;
+    line-height: 116rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #BD0000;
 }
