@@ -2,6 +2,8 @@
 
 body,
 html {
+    font-size: 1px;
+    font-family: "Open Sans";
     background-color: #9C835F !important;
 }
 
@@ -33,4 +35,42 @@ html {
     margin-top: 20px;
     margin-left: 20px;
     line-height: 10px;
+}
+
+.text-player {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16rem;
+    line-height: 29rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.item {
+
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.batu {
+    height: 62rem;
+    width: 88rem;
+}
+
+.kertas {
+    height: 110rem;
+    width: 85rem;
+}
+
+.gunting {
+    height: 120rem;
+    width: 85rem;
 }
