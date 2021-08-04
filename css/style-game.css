@@ -40,8 +40,8 @@ html {
 .text-player {
     font-style: normal;
     font-weight: bold;
-    font-size: 16rem;
-    line-height: 29rem;
+    font-size: 15rem;
+    line-height: 30rem;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -50,7 +50,6 @@ html {
 }
 
 .item {
-
     height: fit-content;
     width: fit-content;
     border-radius: 10px;
@@ -68,11 +67,18 @@ html {
 .vs {
     font-style: normal;
     font-weight: bold;
-    font-size: 64rem;
-    line-height: 116rem;
+    font-size: 65rem;
+    line-height: 115rem;
     text-align: center;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
-
     color: #BD0000;
+    position: relative;
+    top: -50vh;
+    left: 20vw;
+}
+
+.com-option {
+    position: relative;
+    top: -102vh;
+    left: 40vw;
 }
