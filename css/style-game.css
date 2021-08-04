@@ -82,3 +82,9 @@ html {
     top: -102vh;
     left: 40vw;
 }
+
+.refresh {
+    position: relative;
+    top: -100vh;
+    left: 28vw;
+}
