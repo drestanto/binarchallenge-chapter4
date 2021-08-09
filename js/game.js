@@ -54,8 +54,28 @@ function showHasil(hasil) { // procedure
     }
 }
 
+// resultBox, (player/com)(Batu/Gunting/Kertas) adalah variabel global
+// I.S = apapun
+// F.S = ditengah2 tertulsi VS, semua highlight ilang
+function reset() {
+    resultBox.style.visibility = "hidden";
+    playerBatu.style.removeProperty("background-color");
+    playerKertas.style.removeProperty("background-color");
+    playerGunting.style.removeProperty("background-color");
+    comBatu.style.removeProperty("background-color");
+    comKertas.style.removeProperty("background-color");
+    comGunting.style.removeProperty("background-color");
+}
+
 const resultBox = document.getElementById("result-div");
 const resultName = document.getElementById("result-p");
+const playerBatu = document.getElementById("player-batu");
+const playerKertas = document.getElementById("player-kertas");
+const playerGunting = document.getElementById("player-gunting");
+const comBatu = document.getElementById("com-batu");
+const comKertas = document.getElementById("com-kertas");
+const comGunting = document.getElementById("com-gunting");
 
 resultBox.style.visibility = "hidden";
-showHasil("player");
+showHasil("com");
+// reset();
