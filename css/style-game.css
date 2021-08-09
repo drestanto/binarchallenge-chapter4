@@ -79,12 +79,36 @@ html {
 
 .com-option {
     position: relative;
-    top: -620rem;
+    top: -695rem;
     left: 40vw;
 }
 
 .refresh {
     position: relative;
-    top: -650rem;
+    top: -725rem;
     left: 28vw;
+}
+
+.result {
+    transform: rotate(-30deg);
+    border-radius: 10px;
+    background: #4C9654;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -400rem;
+    left: 20vw;
+}
+
+.text-result {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18rem;
+    line-height: 32rem;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
