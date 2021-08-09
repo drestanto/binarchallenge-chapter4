@@ -73,18 +73,18 @@ html {
     text-transform: uppercase;
     color: #BD0000;
     position: relative;
-    top: -50vh;
+    top: -300rem;
     left: 20vw;
 }
 
 .com-option {
     position: relative;
-    top: -102vh;
+    top: -620rem;
     left: 40vw;
 }
 
 .refresh {
     position: relative;
-    top: -100vh;
+    top: -650rem;
     left: 28vw;
 }
