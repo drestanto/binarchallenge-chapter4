@@ -37,15 +37,15 @@
                         </div>
                         <!-- BATU -->
                         <div class="item" id="player-batu">
-                            <img src="img/batu.png" class="opsi">
+                            <img src="img/batu.png" class="opsi" onclick="chooseBatu()">
                         </div>
                         <!-- KERTAS -->
                         <div class="item" id="player-kertas">
-                            <img src="img/kertas.png" class="opsi">
+                            <img src="img/kertas.png" class="opsi" onclick="chooseKertas()">
                         </div>
                         <!-- GUNTING -->
                         <div class="item" id="player-gunting">
-                            <img src="img/gunting.png" class="opsi">
+                            <img src="img/gunting.png" class="opsi" onclick="chooseGunting()">
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <!-- VS Text -->
                 <div class="row d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
                     <p class="vs" id="vs-text">VS</p>
-                    <div class="result" id="result-div">
+                    <div class="result" id="result-div" style="visibility: hidden;">
                         <p class="text-result" id="result-p">test</p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
 
             <!-- REFRESH -->
             <div class="justify-content-center align-items-center refresh">
-                <img src="img/refresh.png" onclick="reset()" class="opsi">
+                <img src="img/refresh.png" class="opsi" onclick="reset()">
             </div>
         </section>
 
