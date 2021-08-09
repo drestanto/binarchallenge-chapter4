@@ -60,15 +60,16 @@ function showHasil(hasil) { // procedure
     resultBox.style.removeProperty("visibility");
     if (hasil=="draw") {
         resultName.innerText = "DRAW";
+        console.log("Hasil Pertandingan = Draw");
     } else if (hasil=="com") {
         resultName.innerText = "COM\nWIN";
+        console.log("Hasil Pertandingan = Com Win");
     } else { //hasil=="player"
         resultName.innerText = "PLAYER 1\nWIN";
+        console.log("Hasil Pertandingan = Player 1 Win");
     }
 }
 
-// MAIN
-resultBox.style.visibility = "hidden";
 
 // ----------- ====== onclick function ====== ----------
 
@@ -86,10 +87,41 @@ function reset() {
     comGunting.style.removeProperty("background-color");
 }
 
+// resultBox, (player/com)(Batu/Gunting/Kertas) adalah variabel global
+// I.S = apapun
+// F.S = player memilih batu. Highlight pilihan player, acak pilihan com, highlight pilihan com, tulis result
 function chooseBatu() {
     reset();
     playerBatu.style.backgroundColor = "#C4C4C4";
     let player = "batu"
+    console.log("Pilihan Player 1 = " + player);
+    com = pilihanCom();
+    console.log("Pilihan Computer = " + com);
+    result = rockPaperScissors(player, com);
+    showHasil(result);
+}
+
+// resultBox, (player/com)(Batu/Gunting/Kertas) adalah variabel global
+// I.S = apapun
+// F.S = player memilih kertas. Highlight pilihan player, acak pilihan com, highlight pilihan com, tulis result
+function chooseKertas() {
+    reset();
+    playerKertas.style.backgroundColor = "#C4C4C4";
+    let player = "kertas"
+    console.log("Pilihan Player 1 = " + player);
+    com = pilihanCom();
+    console.log("Pilihan Computer = " + com);
+    result = rockPaperScissors(player, com);
+    showHasil(result);
+}
+
+// resultBox, (player/com)(Batu/Gunting/Kertas) adalah variabel global
+// I.S = apapun
+// F.S = player memilih gunting. Highlight pilihan player, acak pilihan com, highlight pilihan com, tulis result
+function chooseGunting() {
+    reset();
+    playerGunting.style.backgroundColor = "#C4C4C4";
+    let player = "gunting"
     console.log("Pilihan Player 1 = " + player);
     com = pilihanCom();
     console.log("Pilihan Computer = " + com);
